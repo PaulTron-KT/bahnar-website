@@ -1,0 +1,17 @@
+/* Style chung cho toàn website */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: "Noto Sans", "Segoe UI", Arial, sans-serif;
+  overflow-x: hidden;          /* tránh thanh cuộn ngang */
+  -webkit-text-size-adjust: 100%;
+}
+a { transition: opacity .15s; }
+a:hover { opacity: .85; }
+details summary { list-style-position: inside; }
+/* Thu nhỏ tiêu đề lớn trên điện thoại */
+@media (max-width: 640px) {
+  h1 { font-size: 36px !important; }
+}
